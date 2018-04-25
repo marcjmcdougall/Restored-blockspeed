@@ -11,3 +11,28 @@
     Tags: blue, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, sticky-post, translation-ready
     Text Domain: crypterio-child-theme
 */
+
+
+/* 
+ * ==========
+ * Theming 
+ * ==========
+ */
+
+/* Light Section Theme */
+section.light p, 
+section.light a,
+section.light h1,
+section.light h2,
+section.light h3,
+section.light h4,
+section.light h5,
+section.light h6{
+
+    color: #FFFFFF;
+}
+
+section.light p{
+
+    opacity: 0.8;
+}
