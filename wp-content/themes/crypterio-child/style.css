@@ -13,6 +13,127 @@
 */
 
 
+
+/* 
+ * ==========
+ * Variables 
+ * ==========
+ */
+
+
+/* Colors
+ * ==========
+ * 
+ * Accent: #0E30FB
+ * Accent Dark: #022152
+ *
+ * Light: #FED080
+ * Dark: #171219
+ * Gray: #2A2D34
+ *
+ * Danger: #F05D5E 
+ *
+ */
+
+
+
+/* 
+ * ==========
+ * Global 
+ * ==========
+ */
+
+
+/* 
+ * Layout
+ * ==========
+ */
+
+ #main{
+
+    padding-bottom: 0px !important;
+ }
+
+
+/* 
+ * Typography
+ * ==========
+ */
+
+body{
+
+    font-family: ;
+    color: #022152 !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    /*color: #022152 !important;*/
+}
+
+.readability-optimize *{
+
+    max-width: 650px;
+}
+
+a > i{
+
+    /*margin-right: 10px;*/
+    color: inherit !important;
+}
+
+
+/* 
+ * Navigation (Header) 
+ * ==========
+ */
+
+header#header{
+
+    /*background-color: transparent;*/
+    padding: 50px 0px;
+}
+
+header#header *{
+
+    /*color: #022152;*/
+}
+
+/* 
+ * Footer
+ * ==========
+ */
+
+footer#footer{
+
+    background-color: rgba(14, 48, 251, 0.8) !important;
+    box-shadow: none;
+}
+
+footer#footer .footer_widgets section.widget{
+
+    margin-bottom: 0px !important;
+    margin-top: 20px;
+    text-align: right;
+}
+
+footer#footer .footer_widgets section.widget a{
+
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+footer#footer .footer_widgets section.widget a:hover{
+
+    text-decoration: underline;
+}
+
+footer#footer .footer_widgets section.widget.widget_custom_html{
+
+    opacity: 0.6;
+}
+
+
 /* 
  * ==========
  * Theming 
@@ -20,14 +141,7 @@
  */
 
 /* Light Section Theme */
-section.light p, 
-section.light a,
-section.light h1,
-section.light h2,
-section.light h3,
-section.light h4,
-section.light h5,
-section.light h6{
+section.light *{
 
     color: #FFFFFF;
 }
@@ -35,4 +149,273 @@ section.light h6{
 section.light p{
 
     opacity: 0.8;
+}
+
+
+/* Dark Section Theme */
+section.dark *{
+
+    color: #022152;
+}
+
+section.dark p{
+
+    opacity: 0.8;
+}
+
+section.dark a{
+
+    color: #022152;
+    text-decoration: none;
+
+    border-bottom: 1px solid #022152;
+    padding-bottom: 5px;
+
+    /*opacity: 0.6;*/
+}
+
+section.dark a:hover{
+
+    /*opacity: 1.0;*/
+    /*color: #0E30FB;*/
+    /*border-bottom: 1px solid #0E30FB;*/
+}
+
+
+
+/* 
+ * ==========
+ * Components 
+ * ==========
+ */
+
+
+ /* 
+  * Separator
+  * ==========
+  */
+
+ .separator-row{
+
+    overflow: visible !important;
+ }
+
+ .separator{
+
+    width: 105vw;
+    height: 100px;
+
+    transform: rotateZ(-3deg);
+
+    position: absolute;
+    left: -2.5%;
+    bottom: -40px;
+
+    background-color: #FFFFFF;
+    z-index: 2;
+ }
+
+ /* 
+  * Coin Ticker
+  * ==========
+  */
+
+ .stm-header__cell_right .stm-header__element:last-child{
+
+    width: 100%;
+ }
+
+ .stm_currencies_simple_list .scsl__single{
+
+    width: 20% !important;
+ }
+
+ .stm_currencies_simple_list .scsl__single .inner .scsl__name{
+
+    color: #022152 !important;
+ }
+
+ .stm_currencies_simple_list .scsl__single .inner .scsl__name .scsl__change_minus{
+
+    color: #F05D5E !important;
+ }
+
+ .stm_currencies_simple_list .scsl__single .inner .scsl__price{
+
+    color: #022152 !important;
+ }
+
+ .stm_currencies_simple_list .scsl__single .inner .scsl__time{
+
+    display: none;
+ }
+
+
+/* 
+ * CTA Form
+ * ==========
+ */
+
+ .blockspeed-form{
+
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+
+    background-color: #FFFFFF;
+
+    position: relative;
+
+    border-radius: 3px;
+
+    transform: translateY(100px);
+
+    z-index: 3;
+ }
+
+/* All inputs. */
+.blockspeed-form input{
+
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+    height: 50px;
+
+    padding: 5px 10px;
+
+    border: 1px solid #F7F7F7;
+}
+
+.blockspeed-form input::placeholder{
+
+    opacity: 0.2;
+}
+
+/* Submit button. */
+.blockspeed-form input[type="submit"]{
+
+    background-color: #0E30FB;
+    color: #FFFFFF;
+
+    border: 0px;
+
+    opacity: 0.8;
+}
+
+.blockspeed-form input[type="submit"]:hover{
+
+    opacity: 1.0;
+}
+
+/* All labels. */
+.blockspeed-form label{
+
+       
+}
+
+/* Required asterisks. */
+.blockspeed-form label span.asterisk{
+
+    color: #F05D5E;
+}
+
+.blockspeed-form small{
+
+    opacity: 0.2;
+}
+
+
+/* 
+ * ==========
+ * Sections 
+ * ==========
+ */
+
+
+/* 
+ * Homepage 
+ * ==========
+ */
+
+body.home .page_title{
+
+    display: none;
+}
+
+/* Hero Section */
+
+body.home section#hero{
+
+    padding-top: 150px;
+    padding-bottom: 0px;
+}
+
+body.home section#hero a{
+
+    display: inline-block;
+    margin-top: 60px;   
+
+    opacity: 0.2;
+}
+
+body.home section#hero a:hover{
+
+    opacity: 1.0;
+}
+
+body.home section#hero a > i{
+
+    /*text-decoration: underline;*/
+    padding-left: 10px;
+}
+
+/* Services Section */
+body.home section#services{
+
+    position: relative;
+    z-index: 1;
+
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+body.home section#services .service-item{
+
+    max-width: 250px;
+    margin: 0 auto;
+
+    margin-bottom: 60px;
+}
+
+body.home section#services .service-item h3{
+
+    margin-bottom: 10px;
+}
+
+body.home section#services .service-item i.fa{
+
+    font-size: 2.5rem;
+    color: #0E30FB;
+
+    opacity: 0.6;
+}
+
+/* Newsletter CTA Section */
+body.home section#newsletter-cta{
+
+    overflow: visible !important;
+
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+body.home section#newsletter-cta .blockspeed-form{
+
+    transform: none;
+}
+
+body.home section#newsletter-cta .blockspeed-form small{
+
+    display: block;
+    text-align: center;
 }
