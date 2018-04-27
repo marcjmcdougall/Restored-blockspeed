@@ -35,14 +35,67 @@
  *
  */
 
-
-
 /* 
  * ==========
  * Global 
  * ==========
  */
 
+
+/* 
+ * Heroicons
+ * ==========
+ */
+  .heroicon{
+
+    max-width: 80px;
+  }
+
+ .heroicon-outline {
+
+    fill: #626262; 
+  }
+
+ .heroicon-component-fill {
+    
+    fill: white; 
+  }
+
+ .heroicon-component-accent {
+  
+    fill: rgba(14, 48, 251, 0.6); 
+  }
+
+ .heroicon-shadows {
+
+    fill: #626262;
+    opacity: 0.4; 
+ }
+
+
+ /* 
+ * Onload Animation
+ * ==========
+ */
+
+ .onload{
+
+    opacity: 0.0;
+    pointer-events: none;
+
+    transform: translateY(0px);
+
+    transition: transform 1s, opacity 1s;
+ }
+
+
+.onload.active{
+
+    opacity: 1.0;
+    pointer-events: all;
+
+    transform: translateY(100px);
+}
 
 /* 
  * Layout
@@ -62,13 +115,18 @@
 
 body{
 
-    font-family: ;
     color: #022152 !important;
+
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'PT Mono', monospace !important;
 }
 
 h1, h2, h3, h4, h5, h6{
 
     /*color: #022152 !important;*/
+    font-family: 'Open Sans', sans-serif !important;
+    /*font-family: 'PT Mono', monospace !important;*/
+    font-weight: 700;
 }
 
 .readability-optimize *{
@@ -158,7 +216,7 @@ section.dark *{
     color: #022152;
 }
 
-section.dark p{
+section.dark p:not(:first-child){
 
     opacity: 0.8;
 }
@@ -243,6 +301,7 @@ section.dark a:hover{
  .stm_currencies_simple_list .scsl__single .inner .scsl__price{
 
     color: #022152 !important;
+    opacity: 0.6;
  }
 
  .stm_currencies_simple_list .scsl__single .inner .scsl__time{
@@ -267,7 +326,7 @@ section.dark a:hover{
 
     border-radius: 3px;
 
-    transform: translateY(100px);
+    /*transform: translateY(100px);*/
 
     z-index: 3;
  }
@@ -300,6 +359,7 @@ section.dark a:hover{
     border: 0px;
 
     opacity: 0.8;
+    font-family: 'PT Mono', monospace !important;
 }
 
 .blockspeed-form input[type="submit"]:hover{
@@ -373,7 +433,7 @@ body.home section#hero a > i{
 body.home section#services{
 
     position: relative;
-    z-index: 1;
+    z-index: 0;
 
     padding-top: 200px;
     padding-bottom: 100px;
@@ -384,12 +444,14 @@ body.home section#services .service-item{
     max-width: 250px;
     margin: 0 auto;
 
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 body.home section#services .service-item h3{
 
     margin-bottom: 10px;
+    padding-top: 0px;
+    /*font-size: 20px;*/
 }
 
 body.home section#services .service-item i.fa{
@@ -400,13 +462,115 @@ body.home section#services .service-item i.fa{
     opacity: 0.6;
 }
 
+/* Customer Wins Section */
+body.home section#customer-wins{
+
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+    transform: translateY(-125px);
+}
+
+body.home section#customer-wins .customer-win{
+
+    border-radius: 3px;
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.08);
+    /*border: 1px solid #F7F7F7;*/
+    padding: 25px 40px;
+
+    background-color: #FFFFFF;
+    /*background-color: rgba(2, 33, 82, 0.6);*/
+
+    /*max-width: 400px;*/
+    /*margin: 0 auto;*/
+    margin-bottom: 60px;
+
+    position: relative;
+}
+
+body.home section#customer-wins .customer-win::after{
+
+    content: '';
+    width: 25px;
+    height: 25px;
+
+    display: block;
+
+    /*background-color: rgba(14, 48, 251, 0.6);*/
+    background-color: #2A2D34;
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.08);
+
+    position: absolute;
+
+    opacity: 0.08;
+
+    left: 40px;
+    bottom: -12.5px;
+    transform: rotateZ(45deg);
+
+    z-index: -1;
+}
+
+body.home section#customer-wins .customer-win h4{
+
+    margin-bottom: 0px;
+}
+
+body.home section#customer-wins .customer-win p:last-child{
+
+    margin-bottom: 0px;
+    opacity: 0.6;
+}
+
+body.home section#customer-wins .wpb_column:last-child{
+
+    transform: translateY(100px);
+}
+
+/* Team Section */
+body.home section#team{
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+body.home section#team img{
+
+    max-width: 150px;
+    border-radius: 3px;
+
+    border-bottom: 8px solid rgba(14, 48, 251, 0.8);
+}
+
+body.home section#team h3{
+
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+body.home section#team h3.header{
+
+    margin-bottom: 60px;
+}
+
+body.home section#team .wpb_column{
+
+    padding-right: 90px;
+}
+
 /* Newsletter CTA Section */
 body.home section#newsletter-cta{
 
     overflow: visible !important;
 
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 0px;
+
+    box-shadow: inset 0px 12px 20px 0px rgba(0, 0, 0, 0.20);
+
+    background: url('http://localhost:8888/blockspeed/wp-content/uploads/2018/04/blockspeed-bg-5.png');
+    background-size: cover;
+    background-position: top;
 }
 
 body.home section#newsletter-cta .blockspeed-form{

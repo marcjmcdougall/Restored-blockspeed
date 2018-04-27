@@ -8,12 +8,15 @@ function crypterio_child_enqueue_parent_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'crypterio-layout' ), CRYPTERIO_THEME_VERSION, 'all' );
 }
 
-// add_filter('the_title', 'remove_title_on_homepage', 10, 2);
+// Include customization files.
+function custom_scripts(){
 
-// function remove_title_on_homepage($title, $id){
+	// Enqueue the style file.
+	wp_register_script('app', get_stylesheet_directory_uri() . '/includes/js/app.js', array('jquery'), '1.0.0', true);   
 
-// 	if(is_home()){
+	// Enqueue the script.
+	wp_enqueue_script('app');
+}
 
-// 		return '';
-// 	}
-// }
+// Hook it into the Wordpress install.
+add_action( 'wp_enqueue_scripts', 'custom_scripts' );
