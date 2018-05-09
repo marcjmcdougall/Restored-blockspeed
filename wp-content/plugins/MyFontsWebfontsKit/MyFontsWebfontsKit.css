@@ -1,0 +1,52 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3575283, 2018-05-04T10:50:08-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: GalanoGrotesque-Bold by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/bold/
+ * 
+ * Webfont: GalanoGrotesque-ExtraLight by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/extra-light/
+ * 
+ * Webfont: GalanoGrotesque-Heavy by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/heavy/
+ * 
+ * Webfont: GalanoGrotesque-Medium by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/medium/
+ * 
+ * Webfont: GalanoGrotesque-Regular by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/galano-grotesque/regular/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3575283
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2014 by Ren&#x00E9; Bieder. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/368df3");
+
+  
+@font-face {font-family: 'GalanoGrotesque-Bold';src: url('webfonts/368DF3_0_0.eot');src: url('webfonts/368DF3_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/368DF3_0_0.woff2') format('woff2'),url('webfonts/368DF3_0_0.woff') format('woff'),url('webfonts/368DF3_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'GalanoGrotesque-ExtraLight';src: url('webfonts/368DF3_1_0.eot');src: url('webfonts/368DF3_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/368DF3_1_0.woff2') format('woff2'),url('webfonts/368DF3_1_0.woff') format('woff'),url('webfonts/368DF3_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'GalanoGrotesque-Heavy';src: url('webfonts/368DF3_2_0.eot');src: url('webfonts/368DF3_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/368DF3_2_0.woff2') format('woff2'),url('webfonts/368DF3_2_0.woff') format('woff'),url('webfonts/368DF3_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'GalanoGrotesque-Medium';src: url('webfonts/368DF3_3_0.eot');src: url('webfonts/368DF3_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/368DF3_3_0.woff2') format('woff2'),url('webfonts/368DF3_3_0.woff') format('woff'),url('webfonts/368DF3_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'GalanoGrotesque-Regular';src: url('webfonts/368DF3_4_0.eot');src: url('webfonts/368DF3_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/368DF3_4_0.woff2') format('woff2'),url('webfonts/368DF3_4_0.woff') format('woff'),url('webfonts/368DF3_4_0.ttf') format('truetype');}
+ 

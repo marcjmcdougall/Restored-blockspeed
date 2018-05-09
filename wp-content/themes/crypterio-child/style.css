@@ -118,15 +118,20 @@ body{
     color: #01162a !important;
 
     /*font-family: 'Oswald', sans-serif;*/
-    font-family: 'PT Mono', monospace !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6{
+.body-text{
 
-    /*color: #022152 !important;*/
     font-family: 'Open Sans', sans-serif !important;
-    /*font-family: 'PT Mono', monospace !important;*/
-    font-weight: 700;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .header-text{
+
+    font-family: 'GalanoGrotesque-Bold', sans-serif !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.0 !important;
 }
 
 .readability-optimize *{
@@ -150,6 +155,7 @@ header#header{
 
     /*background-color: transparent;*/
     padding: 50px 0px;
+    padding-bottom: 50px !important;
 }
 
 header#header *{
@@ -166,6 +172,16 @@ footer#footer{
 
     background-color: #032865 !important;
     box-shadow: none;
+}
+
+footer#footer img{
+
+    max-width: 100px !important;
+}
+
+footer#footer .widget:not(.widget_media_image){
+
+    padding-top: 30px;
 }
 
 footer#footer .footer_widgets section.widget{
@@ -186,9 +202,10 @@ footer#footer .footer_widgets section.widget a:hover{
     text-decoration: underline;
 }
 
-footer#footer .footer_widgets section.widget.widget_custom_html{
+footer#footer .footer_widgets{
 
-    opacity: 0.6;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -367,7 +384,6 @@ footer#footer .footer_widgets section.widget.widget_custom_html{
     border: 0px;
 
     opacity: 0.8;
-    font-family: 'PT Mono', monospace !important;
 }
 
 .blockspeed-form input[type="submit"]:hover{
@@ -416,7 +432,7 @@ body.home .page_title{
 body.home section#hero{
 
     padding-top: 150px;
-    padding-bottom: 0px;
+    padding-bottom: 150px;
 }
 
 body.home section#hero h1{
@@ -432,9 +448,10 @@ body.home section#hero a{
     background-color: #3753fb;
     color: #dffc35;
 
-    font-weight: bold;
+    font-weight: 700;
 
     padding: 10px 25px;
+    margin-bottom: 30px;
 }
 
 body.home section#hero a:hover{
@@ -448,22 +465,33 @@ body.home section#hero a > i{
     padding-left: 10px;
 }
 
+body.home section#hero p.header-text{
+
+    font-size: 1.5rem;
+    line-height: 1.2 !important;
+
+    max-width: 500px;
+
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 /* Services Section */
 body.home section#services{
 
     position: relative;
     z-index: 0;
 
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 0px;
 }
 
 body.home section#services .service-item{
 
-    max-width: 250px;
+    max-width: 100%;
     margin: 0 auto;
 
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
 
     text-align: center;
 }
@@ -473,6 +501,14 @@ body.home section#services .service-item h3{
     margin-bottom: 10px;
     padding-top: 0px;
     /*font-size: 20px;*/
+
+    font-size: 2rem;
+}
+
+body.home section#services .service-item img{
+
+    max-width: 175px;
+    margin-bottom: 40px;
 }
 
 body.home section#services .service-item i.fa{
@@ -481,6 +517,12 @@ body.home section#services .service-item i.fa{
     color: #0E30FB;
 
     opacity: 0.6;
+}
+
+body.home section#services .service-item p{
+
+    font-size: 1.2rem;
+    opacity: 1.0;
 }
 
 /* Customer Wins Section */
@@ -573,12 +615,19 @@ body.home section#customer-wins .customer-win h4{
 body.home section#customer-wins .customer-win p:last-child{
 
     margin-bottom: 0px;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
+    /*font-size: 1.1rem;*/
 }
 
 body.home section#customer-wins .wpb_column:last-child{
 
     /*transform: translateY(100px);*/
+}
+
+body.home section#customer-wins .customer-win p.header-text{
+
+    font-size: 2.0rem;
+    line-height: 1.5;
 }
 
 /* Team Section */
@@ -764,10 +813,23 @@ body.home section#newsletter-cta{
     /*background-position: top;*/
 }
 
+body.home section#newsletter-cta img{
+
+    max-width: 75px;
+    margin: 0 auto;
+}
+
+body.home section#newsletter-cta h3{
+
+    padding-top: 0px;
+}
+
 body.home section#newsletter-cta .blockspeed-form{
 
     transform: none;
     padding: 0px;
+
+    padding-top: 20px;
 }
 
 body.home section#newsletter-cta .blockspeed-form small{
