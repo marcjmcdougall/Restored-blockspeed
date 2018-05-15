@@ -21,7 +21,7 @@
 			 	// loop through the rows of data
 			    while ( have_rows('social_media') ) : the_row(); ?>
 
-			        <li><a href="<?php the_sub_field('uri'); ?>" target="_blank"><?php the_sub_field('label'); ?></a></li>
+			        <li><a href="<?php the_sub_field('uri'); ?>" target="_blank"><?php the_sub_field('label'); ?> &xrarr;</a></li>
 
 			    <?php endwhile; ?>
 
@@ -37,12 +37,12 @@
 
 		<div class="details"><?php echo get_field('bio'); ?></div>
 
-		<p><?php the_field('fname'); ?> has worked with companies such as:</p>
-
 		<?php
 
 		// check if the repeater field has rows of data
 		if( have_rows('brands') ): ?>
+
+		<p><?php the_field('fname'); ?> has worked with companies such as:</p>
 
 			<ul class="brand-images"><?php
 
